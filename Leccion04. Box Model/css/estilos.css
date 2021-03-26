@@ -1,0 +1,33 @@
+h1{
+    color:#e63946;
+    text-align: center;;
+
+}
+p{
+    /*Usando paleta de colores: https://coolors.co/palettes/trending */
+    color:#1d3557;
+    background-color:#a8dadc;
+    padding: 15px;
+    border: 10px solid #1d3557;
+   /* margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    */
+    margin:40px 15px 20px 10px;
+
+    /* Poniendo 3 valores sería: Top, left/right, bottom:
+    margin:40px 15px 10px;*/
+
+      /* Poniendo 2 valores sería: Top-Bottom, left/right:
+    margin:40px 10px;*/
+
+    /*Para que se centren automáticamente de manera horizontal:
+    margin:auto;*/
+    
+    text-align: center;
+}
+
+body{
+    background-color: #f1faee;
+}
