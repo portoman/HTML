@@ -1,0 +1,19 @@
+h1{
+    color:fuchsia;
+    text-align: center;
+}
+
+h2{
+    color:blue;  
+}
+
+p{
+    color:crimson;
+}
+
+div{ 
+border: 10px solid #560bad;
+background-color: aquamarine;
+text-align: center;
+
+}

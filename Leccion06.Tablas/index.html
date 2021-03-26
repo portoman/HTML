@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
+    <title>Tablas en HTML</title>
+    <link href="/css/estilos.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <table>
+        <caption>Listado de personas</caption>
+        <tr>
+            <th> Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Alfonso</td>
+            <td>Porto</td>
+            <td>portbuj@yahoo.es</td>
+        </tr>
+        <tr>
+            <td>Lourdes</td>
+            <td>Martinez</td>
+            <td>lmartinez@gmail.es</td>
+        </tr>
+        <tr>
+            <td colspan="2">Pablo López</td> <!-- colspan: Expande celdas a lo largo de columnas -->
+            <td rowspan="2">mplopez@gmail.es</td><!-- rowspan: Expande celdas a lo largo de filas -->
+        </tr>
+        <tr>
+            <td>Marta</td>
+            <td>López</td>
+            
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Porto</td>
+            <td>mporto@yahoo.es</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>Vila</td>
+            <td>mvila@yahoo.es</td>
+        </tr>
+
+
+    </table>
+
+
 </body>
 </html>

@@ -1,0 +1,35 @@
+table{
+    width:100%;
+}
+
+table, th, td{
+    border: 1px solid blue;
+    border-collapse: collapse; /*Para eliminar doble borde y dejar solo uno*/
+   /* border-spacing: 5px;*Para espaciar el doble borde*/
+    padding: 5px; 
+}
+caption{
+    color: #e66946;
+    font-family: 'Trocchi', serif; /*Se escoge la fuente a través de 2 links que están en index head*/
+    font-size:45px;
+    line-height: 60px;
+}
+
+/*Table head*/
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+    text-align: center; 
+}
+
+/*Renglones pares*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+
+/*Renglones impares*/   
+tr:nth-child(odd){
+background-color: #a8dadc;
+}
+
+

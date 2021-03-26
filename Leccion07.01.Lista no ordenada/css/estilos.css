@@ -1,0 +1,28 @@
+h1{
+    color:#1d3557;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #457b9d;
+    overflow:hidden; /*Para separar la lista de manera independiente*/
+    margin: 0;
+    padding:0;   
+}
+
+li{
+    float:left;
+}
+
+/*Enlaces en List items:*/ 
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding:15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:#1d3557 ;
+}

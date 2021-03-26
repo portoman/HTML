@@ -1,0 +1,33 @@
+*{
+margin:0;
+padding:0;
+
+}
+
+/*Clase de CSS: Se crea para aplicar los estilos solo en donde queramos*/
+.titulo{
+    color:fuchsia;
+    text-align: center;
+    margin:15px;
+}
+
+h2{
+    color:blue;  
+}
+
+p{
+    color:crimson;
+}
+
+.tarjeta{ 
+border: 10px solid #560bad;
+background-color: aquamarine;
+text-align: center;
+margin:15px 100px;
+padding:15px;
+
+}
+
+.titulo1{
+    color:green;
+}
