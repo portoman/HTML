@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <fieldset><!--Para bordear el formulario-->
+        <legend>Datos de persona</legend>
+        <form action=mi_servidor target="_self" method="GET"><!--GET: Método por defecto para enviar información al servidor. 
+            La info se refleja en la URL-->
+            <!--action: Para enviar la informacion a una URL concreta
+                target:_blank-> Para abrir el formulario en una nueva ventana
+                targer:_self-> El formulario se abre en la misma ventana (Por defecto)-->
+            
+            <label for id="nombre">Nombre:</label><br/>
+            <input type="text" id="nombre" name="nombre" 
+            placeholder="Escribe tu nombre" required="true"/><br/>
+            
+
+            <label for id="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido"
+            placeholder="Escribe tu apellido" required="true"/><br/>
+
+            <label for="email">Email</label></br>
+            <input type="email" id="email" name="email" 
+            placeholder="Escribe tu email" requires="true"/><br/>
+
+            <label for="edad">Edad:</label></br>
+            <input type="number" id="edad" name="edad" max="100" min="18"/><br/>
+
+            <label>Género</label></br><!--Radiobuttoms: Solo se permite seleccionar una opción-->
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femeninio">Femenino</label></br>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label for="masculino">Masculino</label></br>
+
+            <label style="color:blue">Género música favorita</label></br><!--Checkbox: Se permiten seleccionar varias opciones-->
+            <input type="checkbox" id="rock" name="musica" value="rock"/>
+            <label for="rock">Rock</label></br>
+            <input type="checkbox" id="pop" name="musica" value="pop"/>
+            <label for="pop">Pop</label></br>
+            <input type="checkbox" id="blues" name="musica" value="blues"/>
+            <label for="blues">Blues</label></br>
+
+            <!--Elemento Select-->
+            <label for="coches">Marca Coche favorita</label></br>
+            <select id="autos" name="autos">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option>
+            </select></br>
+
+            <label for="comentario">Comentario:</label></br>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario
+            </textarea></br>
+
+            <label for id="idPersona">Id Persona:</label><br/><!--Información para enviar al servidor-->
+            <input type="text" id="idPersona" name="idPersona" 
+            readonly="true" value="100" /><br/>
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+
+            <input type="submit" value="Enviar"/>
+            <input type="submit" formnovalidate="formnovalidate"
+            value="Enviar sin validar"/>
+            
+            <input type="reset" value="Restablecer"/>
+        </form>
+    </fieldset>
+
+        <form method="POST"><!--POST: Método para enviar información sin ser a través de la URL, como el psw-->
+            <label for id="password">Password</label> </label><br/>
+                <input type="password" id="password" name="passwort" 
+                required="true"/><br/>
+                <input type="submit" value="Enviar"/>
+
+            </form>
+
+</body>
+</html>

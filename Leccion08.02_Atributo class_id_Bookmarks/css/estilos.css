@@ -1,11 +1,12 @@
+/* "*"Para aplicar estilo general a toda la página"
 *{
 margin:0;
 padding:0;
-
 }
+*/
 
-/*Clase de CSS: Se crea para aplicar los estilos solo en donde queramos*/
-.titulo{
+/*Id de CSS: Para aplicar estilo a un elemento individual*/
+#titulo_individual{
     color:fuchsia;
     text-align: center;
     margin:15px;
@@ -19,6 +20,7 @@ p{
     color:crimson;
 }
 
+/*Clase de CSS: Se crea para aplicar los estilos solo en donde queramos*/
 .tarjeta{ 
 border: 10px solid #560bad;
 background-color: aquamarine;
